@@ -5,12 +5,27 @@ import { crearTodoHTML } from "./js/componentes";
 
 export const todoList = new TodoList();
 
-const tarea = new Todo("Aprender JavaScript!!!");
+todoList.todos.forEach(crearTodoHTML);
 
-todoList.nuevoTodo(tarea);
+// const newTodo = new Todo('Aprender JavaScript');
+// // todoList.nuevoTodo(newTodo);
+// todoList.todos[0].imprimirClase();
+
+ console.log('todos', todoList.todos);
+
+// const tarea = new Todo("Aprender JavaScript!!!");
+// todoList.nuevoTodo(tarea);
+// console.log(todoList);
 
 // tarea.completado = true;
 
-console.log(todoList);
 
-crearTodoHTML(tarea);
+// crearTodoHTML(tarea);
+
+// localStorage.setItem('mi-key', 'ABC1234');
+// sessionStorage.setItem('mi-key', 'ABC1234');
+
+// setTimeout(() => {
+//     localStorage.removeItem('mi-key');
+// }, 1500);
+
